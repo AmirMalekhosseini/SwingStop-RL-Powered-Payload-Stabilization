@@ -122,7 +122,7 @@ pip install mujoco mediapy stable-baselines3 gymnasium matplotlib
 Open:
 
 ```text
-RL_Project_Final.ipynb
+SwingStop RL-Powered Payload Stabilization.ipynb
 ```
 
 Run all cells to:
@@ -139,15 +139,6 @@ The final **Master AI model** achieves a **"Perfect Catch"** in extreme momentum
 ✔ Seamlessly takes control after scripted motion  
 ✔ Stabilizes chaotic dynamics  
 ✔ Operates under strict physical constraints  
-
----
-
-## 📚 Future Work
-
-- Multi-axis control (full 2D stabilization)
-- Real-world robotic implementation
-- Energy-optimal control policies
-- Sim-to-real transfer
 
 ---
 
