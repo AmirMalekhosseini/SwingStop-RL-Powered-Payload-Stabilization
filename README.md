@@ -1,4 +1,4 @@
-# SwingStop: RL-Powered Payload Stabilization 🏗️🤖
+# SwingStop: RL-Powered Payload Stabilization 
 
 > A Reinforcement Learning project utilizing Stable-Baselines3 and MuJoCo to train an AI agent in active kinetic damping and payload stabilization.
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 The objective of this project is to simulate a robotic crane arm that executes a high-momentum trajectory (a **"Fast Whip"** — 90° to the left and back) and seamlessly hands off control to a Reinforcement Learning (RL) agent.
 
@@ -19,29 +19,29 @@ The agent's mission is to **actively absorb chaotic kinetic energy** and stabili
 
 ---
 
-## 🎬 Demo
+##  Demo
 
 ![Demo of the AI perfectly catching the bottle](docs/demo.gif)
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-- 🔄 **Seamless AI Handoff Mechanism**  
+-  **Seamless AI Handoff Mechanism**  
   Physics-based scripted motion transitions directly into an RL environment **without resetting state**, transferring full kinetic momentum to the agent.
 
-- 🧠 **Curriculum Training Strategy**  
+-  **Curriculum Training Strategy**  
   The PPO agent is trained in a **zero-damping vacuum** with randomized high-energy initial states to master extreme conditions.
 
-- 🎯 **Active Damping Constraints**  
+-  **Active Damping Constraints**  
   The agent is limited to **±20° control**, forcing it to learn **precise micro-adjustments** instead of brute-force control.
 
-- 📊 **Telemetry Visualization**  
+-  **Telemetry Visualization**  
   Generates frame-accurate plots of the payload’s motion and the agent’s response using `matplotlib`.
 
 ---
 
-## 🔬 Methodology & Experiments
+##  Methodology & Experiments
 
 The project progresses through three increasingly challenging setups:
 
@@ -69,14 +69,14 @@ The project progresses through three increasingly challenging setups:
 
 ---
 
-## 🧠 Key Insight: The Single-Axis Limitation
+##  Key Insight: The Single-Axis Limitation
 
 The agent discovers a **physically optimal strategy**:
 
 - It **cannot control the Y-axis** (perpendicular motion).
 - Any attempt to correct Y will destabilize X.
 
-👉 Therefore, the optimal policy becomes:
+ Therefore, the optimal policy becomes:
 1. **Stabilize the X-axis perfectly**
 2. **Stop moving completely**
 3. Let natural physics resolve the Y-axis
@@ -85,7 +85,7 @@ This is a learned **control-theoretic behavior**, not explicitly programmed.
 
 ---
 
-## 📈 Telemetry Visualization
+##  Telemetry Visualization
 
 ![Telemetry Plot](docs/telemetry_plot.png)
 
@@ -93,7 +93,7 @@ The graph shows the agent stabilizing X and then **freezing**, demonstrating its
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Simulation:** [MuJoCo](https://mujoco.org/) — Multi-body physics simulation
 - **RL Framework:** [Stable-Baselines3](https://stable-baselines3.readthedocs.io/) — PPO algorithm
@@ -102,7 +102,7 @@ The graph shows the agent stabilizing X and then **freezing**, demonstrating its
 
 ---
 
-## 🚀 Installation & Usage
+##  Installation & Usage
 
 ### 1️⃣ Clone the repository
 
@@ -132,7 +132,7 @@ Run all cells to:
 
 ---
 
-## 🏆 Results
+##  Results
 
 The final **Master AI model** achieves a **"Perfect Catch"** in extreme momentum scenarios.
 
@@ -142,18 +142,18 @@ The final **Master AI model** achieves a **"Perfect Catch"** in extreme momentum
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Feel free to open issues or submit pull requests if you want to improve the project.
 
 ---
 
-## 📜 License
+##  License
 
 This project is open-source. Add a license if needed.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 Created as an exploration into **reinforcement learning, active damping, and continuous control robotics**.
